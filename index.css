@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+    --color-midnight-bg: #0a0a0a;
+    --color-forest-bg: #051205;
+    --color-minimalist-bg: #121212;
+    --color-light-bg: #ffffff;
+    --color-dark-bg: #121212;
+    --color-electric-blue: #0070f3;
+    --color-bright-red: #ff0000;
+    --color-acid-green: #afff00;
+    --color-neon-purple: #bf00ff;
+
+    --font-grotesk: "Space Grotesk", sans-serif;
+    --font-mono: "Space Mono", monospace;
+    --font-sans: Inter, sans-serif;
+
+    --shadow-hard: 8px 8px 0px 0px #000000;
+    --shadow-hard-dark: 8px 8px 0px 0px #ffffff;
+    --shadow-hard-sm: 4px 4px 0px 0px #000000;
+    --shadow-hard-sm-dark: 4px 4px 0px 0px #ffffff;
+
+    --animate-fade-in: fadeIn 0.5s ease-out forwards;
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    --animate-slide-in: slideIn 0.3s ease-out forwards;
+
+    @keyframes slideIn {
+        0% {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+
+@layer base {
+    body {
+        @apply antialiased;
+    }
+}
+
+@utility no-scrollbar {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
