@@ -85,7 +85,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onNavigateToAuth }) => {
                 </section>
             </main>
             <footer className="p-8 text-center bg-gray-800 border-t-4 border-white">
-                <p className="font-bold">&copy; 2024 FocusForge. For Students, By Students.</p>
+                <p className="font-bold">&copy; 2025 FocusForge. For Students, By Students.</p>
             </footer>
         </div>
     );
